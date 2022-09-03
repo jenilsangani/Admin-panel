@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive admin panel</title>
+
+    <!-- CSS LINK -->
+
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- MATERIAL ICON -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet"">
+  </head>
+  <body>
+    <div class=" container">
+    <aside>
+        <div class="top">
+            <div class="logo">
+                <img src="./img/logo.png" />
+                <h2>HOTS<span class="danger">POT</span></h2>
+            </div>
+            <div class="close" id="close-btn">
+                <span class="material-icons-sharp">close</span>
+            </div>
+        </div>
+        <div class="sidebar">
+            <a href="#">
+                <span class="material-icons-sharp">grid_view</span>
+                <h3>Dashboard</h3>
+            </a>
+            <a href="#" class="active">
+                <span class="material-icons-sharp">person</span>
+                <h3>Customers</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons-sharp">grading</span>
+                <h3>Orders</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons-sharp">insights</span>
+                <h3>Analytics</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons-sharp">message</span>
+                <h3>Messages</h3>
+                <div class="message-count">70</div>
+            </a>
+            <a href="#">
+                <span class="material-icons-sharp">inventory</span>
+                <h3>Products</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons-sharp">report</span>
+                <h3>Reports</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons-sharp">settings</span>
+                <h3>Settings</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons-sharp">add</span>
+                <h3>Add Product</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons-sharp">logout</span>
+                <h3>Logout</h3>
+            </a>
+        </div>
+    </aside>
+    <!-------------------SALES------------------>
+    <main>
+        <h1>Dashboard</h1>
+        <div class="date">
+            <input type="date" />
+        </div>
+        <div class="insights">
+            <div class="sales">
+                <span class="material-icons-sharp">analytics</span>
+                <div class="middle">
+                    <div class="left">
+                        <h3>Total Seles</h3>
+                        <h1>$52,159</h1>
+                    </div>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="number">
+                            <p>80%</p>
+                        </div>
+                    </div>
+                </div>
+                <small class="text-muted">Last 24 Hours</small>
+            </div>
+            <!-------------------END OF SELES--------------------------------------------------------------------------------->
+            <div class="expeses">
+                <span class="material-icons-sharp">bar_chart</span>
+                <div class="middle">
+                    <div class="left">
+                        <h3>Total Expeses</h3>
+                        <h1>$24,755</h1>
+                    </div>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="number">
+                            <p>60.87%</p>
+                        </div>
+                    </div>
+                </div>
+                <small class="text-muted">Last 24 Hours</small>
+            </div>
+            <!-------------------END OF EXPENSES------------------------------------------------------------------>
+            <div class="income">
+                <span class="material-icons-sharp">stacked_line_chart</span>
+                <div class="middle">
+                    <div class="left">
+                        <h3>Total Income</h3>
+                        <h1>$12,859</h1>
+                    </div>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="number">
+                            <p>46.58%</p>
+                        </div>
+                    </div>
+                </div>
+                <small class="text-muted">Last 24 Hours</small>
+            </div>
+            <!-------------------END OF INCOME---------------------------------------------------------->
+
+            <!--------------------------- recent order list --------------------------------->
+        </div>
+        <div class="recent-orders">
+            <h2>Recent Orders</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Product Number</th>
+                        <th>Payment</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SONY Alpha ILCE-6400 Mirrorless Camera</td>
+                        <td>85518</td>
+                        <td>Due</td>
+                        <td class="warning">Pending</td>
+                        <td class="primary">Details</td>
+                    </tr>
+                    <tr>
+                        <td>Mi 3i 20000 mAh Power Bank</td>
+                        <td>72518</td>
+                        <td>Due</td>
+                        <td class="danger">Declined</td>
+                        <td class="primary">Details</td>
+                    </tr>
+                    <tr>
+                        <td>PHILIPS Trimmer 45 min Runtime 10 Length Settings</td>
+                        <td>54585</td>
+                        <td>Due</td>
+                        <td class="success">Shiped</td>
+                        <td class="primary">Details</td>
+                    </tr>
+                    <tr>
+                        <td>Voltas 1.5 Ton 5 Star Split Inverter AC - White</td>
+                        <td>68651</td>
+                        <td>Due</td>
+                        <td class="danger">Refund</td>
+                        <td class="primary">Details</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="#">Show All</a>
+        </div>
+    </main>
+
+    <!---------------------------End of recent order list ------------------------->
+
+    <!---------------------------- top---------------------------->
+    <div class="right">
+        <div class="top">
+            <button id="menu-btn">
+                <span class="material-icons-sharp">menu</span>
+            </button>
+            <div class="theme-toggler">
+                <span class="material-icons-sharp active">light_mode</span>
+                <span class="material-icons-sharp">dark_mode</span>
+            </div>
+            <div class="profile">
+                <div class="info">
+                    <p>Hey, <b>Jenil sangani</b></p>
+                    <small class="text-muted">Admin</small>
+                </div>
+                <div class="profile-photo">
+                    <img src="./img/img 1.jpg" />
+                </div>
+            </div>
+        </div>
+
+        <!---------------------------- end of top ---------------------------->
+        <!-------------------------- recent-updates--------------------------->
+        <div class="recent-updates">
+            <h2>Recent Updates</h2>
+            <div class="updates">
+                <div class="update">
+                    <div class="profile-photo">
+                        <img src="./img/jaydip.PNG" />
+                    </div>
+                    <div class="message">
+                        <p>
+                            <b>Jaydip Ranva</b> Received his order of Night lion tech GPS
+                            drone.
+                        </p>
+                        <small class="text-muted">2 Minutes Ago</small>
+                    </div>
+                </div>
+
+                <div class="update">
+                    <div class="profile-photo">
+                        <img src="./img/nimesh.PNG" />
+                    </div>
+                    <div class="message">
+                        <p>
+                            <b>Nimesh Gareja</b> Received his order of Night lion tech GPS
+                            drone.
+                        </p>
+                        <small class="text-muted">2 Minutes Ago</small>
+                    </div>
+                </div>
+
+                <div class="update">
+                    <div class="profile-photo">
+                        <img src="./img/img 3.jpg" />
+                    </div>
+                    <div class="message">
+                        <p>
+                            <b>Jenil Sangani</b> Received his order of Night lion tech GPS
+                            drone.
+                        </p>
+                        <small class="text-muted">2 Minutes Ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-------------------------- end of recent-updates--------------------------->
+
+        <div class="sales-analytics">
+            <h2>Sales Analytics</h2>
+            <div class="item online">
+                <div class="icon">
+                    <span class="material-icons-sharp">shopping_cart</span>
+                </div>
+                <div class="right">
+                    <div class="info">
+                        <h3>ONLINE ORDERS</h3>
+                        <small class="text-muted">Last 24 Hours</small>
+                    </div>
+                    <h5 class="success">+41%</h5>
+                    <h3>2579</h3>
+                </div>
+            </div>
+
+            <div class="item ofline">
+                <div class="icon">
+                    <span class="material-icons-sharp">local_mall</span>
+                </div>
+                <div class="right">
+                    <div class="info">
+                        <h3>OFLINE ORDERS</h3>
+                        <small class="text-muted">Last 24 Hours</small>
+                    </div>
+                    <h5 class="danger">-19.85%</h5>
+                    <h3>1243</h3>
+                </div>
+            </div>
+
+            <div class="item customer">
+                <div class="icon">
+                    <span class="material-icons-sharp">person</span>
+                </div>
+                <div class="right">
+                    <div class="info">
+                        <h3>NEW CUSTOMER</h3>
+                        <small class="text-muted">Last 24 Hours</small>
+                    </div>
+                    <h5 class="success">+29.5%</h5>
+                    <h3>864</h3>
+                </div>
+            </div>
+            <div class="item add-product">
+                <div>
+                    <span class="material-icons-sharp">add</span>
+                    <h3>Add Products</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <!------------------------------------- LINK JS ------------------------------------>
+
+    <script src="./main.js"></script>
+    <script src="./other .js"></script>
+
+    </body>
+
+</html>
